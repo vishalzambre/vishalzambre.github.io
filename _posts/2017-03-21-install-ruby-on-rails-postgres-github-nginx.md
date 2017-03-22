@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Install Ruby On Rails, Postgres, GitHub, Nginx with Passenger
 category: tech
-tags: [ 'ruby', 'postgres', 'git', 'nginx', 'rails' ]
+tags: [ 'ruby', 'postgres', 'git', 'nginx', 'rails', 'devops' ]
 ---
 To setup production environment with ruby, rails, nginx and passengeruse following steps one by one
 

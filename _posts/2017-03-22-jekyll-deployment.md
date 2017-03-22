@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Jekyll Deployment using git hook
 category: tech
-tags: [ 'ruby', 'Jekyll', 'git', 'hook', 'post-receive' ]
+tags: [ 'ruby', 'git', 'devops' ]
 ---
 Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. A one of them deployment techniques is described below using git hook.
 
@@ -37,7 +37,7 @@ Sites built using Jekyll can be deployed in a large number of ways due to the st
     $HOME/.rvm/scripts/rvm default # if rvm installed
     cp $TMP_GIT_CLONE/_config.yml.sample _config.yml # if sample file present
     cd $TMP_GIT_CLONE && sudo ./scripts/install
-    jekyll build -s $TMP_GIT_CLONE -d $PUBLIC_WWW
+    JEKYLL_ENV=production jekyll build -s $TMP_GIT_CLONE -d $PUBLIC_WWW
     sudo /etc/init.d/nginx restart # assume that web server is nginx
     rm -Rf $TMP_GIT_CLONE
     exit
