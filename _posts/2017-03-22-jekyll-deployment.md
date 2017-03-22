@@ -34,12 +34,12 @@ Sites built using Jekyll can be deployed in a large number of ways due to the st
     PUBLIC_WWW=/var/www/myrepo
 
     git clone $GIT_REPO $TMP_GIT_CLONE
-    rvm default # if rvm installed
+    $HOME/.rvm/scripts/rvm default # if rvm installed
     cp $TMP_GIT_CLONE/_config.yml.sample _config.yml # if sample file present
-    cd $TMP_GIT_CLONE && ./scripts/install
+    cd $TMP_GIT_CLONE && sudo ./scripts/install
     jekyll build -s $TMP_GIT_CLONE -d $PUBLIC_WWW
+    sudo /etc/init.d/nginx restart # assume that web server is nginx
     rm -Rf $TMP_GIT_CLONE
-    /etc/init.d/nginx restart # assume that web server is nginx
     exit
     </code></pre>
   </li>
