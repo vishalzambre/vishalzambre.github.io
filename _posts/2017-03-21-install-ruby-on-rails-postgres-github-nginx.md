@@ -7,7 +7,7 @@ tags: [ 'ruby', 'postgres', 'git', 'nginx', 'rails' ]
 ---
 To setup production environment with ruby, rails, nginx and passengeruse following steps one by one
 
-<ol>
+<ul class='list-unstyled text-left'>
   <li>
     Install dev dependencies
     <pre><code data-trim class="yaml">

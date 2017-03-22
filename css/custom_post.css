@@ -1,0 +1,11 @@
+.text-left {
+  text-align: left !important;
+}
+
+ul.content li{
+  padding: 10px;
+}
+
+#post p {
+  text-align: left;
+}
