@@ -56,6 +56,18 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <!-- Google Tracking Id End -->
 
   {% endif %}
+
+  <!-- foxpush browser push notifications -->
+  <script type="text/javascript">
+    (function(){
+       var foxscript = document.createElement('script');
+           foxscript.src = '//js.foxpush.com/vishalzambrein.js?v='+Math.random();
+           foxscript.type = 'text/javascript';
+           foxscript.async = 'true';
+       var fox_s = document.getElementsByTagName('script')[0];
+       fox_s.parentNode.insertBefore(foxscript, fox_s);
+    })();
+  </script>
 {% endif %}
 
 {% if site.disqus-shortname and jekyll.environment == "production" %}
