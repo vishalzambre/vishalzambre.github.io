@@ -30,7 +30,7 @@ force-https: True
 
 lang: "en"
 author: "Vishal Zambre"
-title: "Rubyist"
+title: "Vishal Zambre's Blog"
 description: "Blog and website of Vishal Zambre, blogging mainly for tech. Opinions expressed are mine."
 keywords: "vishal, zambre, personal, jekyll, theme, ruby"
 favicon: "/img/favicon.ico"
@@ -199,3 +199,4 @@ sass:
 gems:
   - jekyll-paginate
   - jemoji
+  - jekyll-seo-tag
