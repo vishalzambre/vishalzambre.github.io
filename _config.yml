@@ -32,7 +32,7 @@ lang: "en"
 author: "Vishal Zambre"
 title: "Vishal Zambre's Blog"
 description: "Blog and website of Vishal Zambre, blogging mainly for tech. Opinions expressed are mine."
-keywords: "vishal, zambre, personal, jekyll, theme, ruby"
+keywords: "vishal, zambre, personal, jekyll, theme, ruby, spree, rails, nginx, install, ssl, lets encrypt"
 favicon: "/img/favicon.ico"
 
 ################
