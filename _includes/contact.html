@@ -9,25 +9,32 @@
 
       {% if site.email %}
         {% if site.email contains '@' %}
-          {% assign newemail = site.email | split: '@' %}
-            <p>
-            <script>
-              function join_at_email(user, domain){
-              return (user && domain)?(user + "@" + domain):"";
-              }
-              document.write('<a href="mailto:'
-              + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
-              + '">'
-              + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
-              + '</a>'
-              );
-              </script>
-            </p>
-        {% else %}
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <div class="col-md-6 col-md-offset-1">
+            <form action="https://formspree.io/{{ site.email }}" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Enter you name" required="required">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control" name="_replyto" placeholder="Enter you email"  required="required">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Leave your message here!" required="required" row="5" ></textarea>
+              </div>
+
+              <input type="hidden" name="_next" value="https://vishal.zambre.in/thanks.html" />
+              <input type="hidden" name="_subject" value="New submission vishal.zambre.in!" />
+
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            OR
+            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          </div>
         {% endif %}
       {% endif %}
-
     </div>
   </div>
 </section>
