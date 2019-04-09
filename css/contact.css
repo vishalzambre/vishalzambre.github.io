@@ -1,0 +1,40 @@
+/* contact us */
+
+.section-cn {
+    z-index:1;
+    margin-top:60%;
+    background-image: url('../img/BG_Layout.png');
+    background-size: cover;
+    padding-bottom:70%;
+}
+.section-cn h3 {
+    color:rgb(73, 104, 127);
+    font-family: "myFirstFontmd";
+
+}
+.section-cn h5 {
+    font-family: "myFirstFontrg";
+    font-size:130%;
+    margin:0px
+}
+.form-control {
+    border: none;
+    background-color: rgb(246, 244, 225);
+    border-radius:0px;
+    box-shadow: none;
+    width:70%;
+    font-family: "myFirstFontrg";
+    font-size:120%;
+    height:50px;
+    margin:10px 0px;
+}
+.sen-but {
+    background-color: rgb(80, 109, 135);
+    padding:3%;
+    padding-left:20%;
+    padding-right:20%;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    font-size:70%;
+    color:white
+}

@@ -5,4 +5,28 @@ title: Contact
 ---
 ## Contact
 
-Drop me an email if you are interested in me coding for you or saving your neighborhood!
+<section class="section-cn">
+  <div id="contact" class="container col-md-12">
+      <h1 class="rg_b" style="text-align: center; color: black">Contact Us</h1>
+  </div>
+  <div class="col-md-12 row" style="padding-left:10%; padding-top:10%;">
+      <div class="col-md-6 wow fadeInLeft">
+          <h3>Vishal Zambre</h3>
+          <h4 class="rg_b" style="padding-top:2%"><img src="./img/email.png"/><span>&nbsp;&nbsp;</span>v.zambre@gmail.com</h4>
+      </div>
+      <div class="col-md-6 form wow fadeInRight" >
+          <p class="rg_b" style="text-align: center;font-size: 180%;width:70%">Have a query?</p>
+          <form id="contactForm" name="sentMessage" class="gform" action="https://script.google.com/macros/s/AKfycbzLOc5pEO5kIrqzWKFE_pbQ_FcLJ0_Cq8NmUF06K0Utu7uiMWX7/exec" >
+              <input type="text" class="form-control" id="name" placeholder="Name" name="name" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter your name')">
+              <input type="number" class="form-control" id="phone" placeholder="Contact Number" name="phone" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter your contact number')">
+              <input type="email" class="form-control" id="email" placeholder="Email Id" name="email" required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Please Enter valid email')">
+              <textarea class="form-control left" id="message" placeholder="Message " aria-invalid="false" style="
+              height: 120px;
+              " required oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Message cannot be blank')"></textarea>
+              <div class="clearfix"></div>
+              <div id="success"></div>
+              <p style="text-align: center;font-size: 180%;width:70%"><button id="sendMessageButton"  class="sen-but">Send</button></p>
+          </form>
+      </div>
+  </div>
+</section>
