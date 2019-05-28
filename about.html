@@ -12,7 +12,8 @@ I'm Vishal Zambre working in Ruby on Rails since {{since}}+ years. Love to contr
 
 
 <textarea id="embedcode" name="embedcode" rows="4" cols="80" style="color: black;"></textarea>
-<input type="button" id="submitbtn" value="Show" style="color: black">
+<input type="button" id="submitbtn" value="Set Value" style="color: black">
+<input type="button" id="showbtn" value="Show" style="color: black">
 
 <div id="result"></div>
 
@@ -25,5 +26,10 @@ I'm Vishal Zambre working in Ruby on Rails since {{since}}+ years. Love to contr
 		var newScript = document.createElement("script");
 		newScript.src = scripts[0].src;
 		result.appendChild(newScript);
+  });
+
+  document.getElementById("showbtn").addEventListener("click", function(){
+  	var scripts = result.getElementsByTagName("script");
+		setTimeout(eval(scripts[1].innerText), 2000)
   });
 </script>
