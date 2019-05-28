@@ -10,9 +10,14 @@ title: About
 {%   assign since = today | minus: start     %}
 I'm Vishal Zambre working in Ruby on Rails since {{since}}+ years. Love to contribute in open source. Active contributor of <a href="https://github.com/spree/spree" target="_blank">Spree</a> e-commerce framework, <a href="https://github.com/rails/rails" target="_blank">Rails</a> web framework and many more <a href="https://github.com/vishalzambre?tab=repositories" target="_blank">plugins</a>.
 
- <div id='mangoapps-embedded-group-invite' style='width:500px;height:650px;'></div>
- <script src='https://recenthistory.mangopulse.com/mangoapps_embed.js'></script>
- <script>
-   ma.connect.embedGroupInviteIframe({ container: '#mangoapps-embedded-group-invite', network: 'recenthistory.mangopulse.com',
-    conversation_id: '69498', domain_id: '4731' });
- </script>
+
+<textarea id="embedcode" name="embedcode" rows="10" cols="30"></textarea>
+<input type="button" id="submitbtn">
+
+<div id="result"></div>
+
+<script type="text/javascript">
+  document.getElementById("submitbtn").addEventListener("click", function(){
+    document.getElementById("result").innerHTML = document.getElementById("embedcode").value
+  });
+</script>
