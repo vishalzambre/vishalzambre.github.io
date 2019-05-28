@@ -20,10 +20,5 @@ I'm Vishal Zambre working in Ruby on Rails since {{since}}+ years. Love to contr
   document.getElementById("submitbtn").addEventListener("click", function(){
   	var result = document.getElementById("result");
 	  result.innerHTML =  document.getElementById("embedcode").value;
-		var scripts = result.getElementsByTagName("script");
-		var newScript = document.createElement("script");
-		newScript.src = scripts[0].src;
-		result.appendChild(newScript);
-    eval(scripts[1].innerText);
   });
 </script>
