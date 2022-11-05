@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Vishal Zambre"
+email: v.zambre@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Blog and website of Vishal Zambre, blogging mainly for tech. Opinions expressed are mine.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: vzambre
+github_username:  vishalzambre
+keywords: "vishal, zambre, personal, jekyll, theme, ruby, spree, rails, nginx, install, ssl, lets encrypt"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-seo-tag
+
+##################
+# Joining Date #
+#################
+joning-date: '2012-01-11'
+##################
+# GPG on Keybase #
+##################
+
+enable-gesture-navigation: True
+google-tracking-id: "UA-96026950-1"
+
+post-preview-words: 10
+
+paginate: 5
+
+disqus:
+  name: "vishalzambre" # required
+  noscript: 'Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>'
+
+
+############
+# Timeline #
+############
+
+events:
+  - image: "/img/timeline/open-source.jpg"
+    date: "April 2017 - Today"
+    description: "Working as Remote Ruby Engineer, Learning new geeky things and contributing to open source"
+  - image: "/img/timeline/spidertocat.png"
+    date: "June 2014 - April 2017"
+    description: "Started journey with Weboniselab"
+  - image: "/img/timeline/start-coding.jpg"
+    date: "November 2012 - June 2014"
+    description: "Started coding at Anchanto"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
