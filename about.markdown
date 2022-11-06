@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-{%   assign today = site.time | date: '%Y'      %}
-{%   assign start = site.joning-date | date: '%Y'  %}
-{%   assign since = today | minus: start     %}
-# Software Architect
-# Summary
+{% assign today = site.time | date: '%Y' %}
+{% assign start = site.joning-date | date: '%Y'  %}
+{% assign since = today | minus: start %}
+
+# {{site.designation}}
 * {{since}}+ Year of experience in Ruby on Rails Development.
 * OSS Contributor (Rails, Spree, etc), many more <a href="https://github.com/vishalzambre?tab=repositories" target="_blank">plugins</a>.
 * Experience programming on Ruby (1.9.x, 2.x.x, 3.x.x), Rails (3.x.x, 4.x.x, 5.x.x, 6.x.x, 7.x.x), Spree (1.2.x, 2.0.x, 3.x.x), AJAX, Mysql, JQuery, Postgresql, DevOps (Ansible, Docker, Capistrano), Snowflake, Elasticsearch

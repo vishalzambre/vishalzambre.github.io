@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1 class="rg_b" style="text-align: center; color: black">
+  {% if page.page_title %}
+    {{ page.page_title}}
+  {% else %}
+    {{page.title }}
+  {% endif %}
+</h1>
+
+{{ content }}
