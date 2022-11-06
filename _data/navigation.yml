@@ -1,0 +1,5 @@
+navs:
+  - title: About
+    link: /about.html
+  - title: Contact
+    link: /contact.html

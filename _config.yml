@@ -34,7 +34,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
   - jemoji
   - jekyll-seo-tag
 
@@ -51,12 +50,13 @@ google-tracking-id: "UA-96026950-1"
 
 post-preview-words: 10
 
-paginate: 5
-
 disqus:
   name: "vishalzambre" # required
   noscript: 'Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>'
 
+email-share: True
+twitter-share: True
+linkedin-share: True
 
 ############
 # Timeline #
