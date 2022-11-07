@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Ruby File.dirname hack
+title: Confusing behavior of File.dirname
 category: ruby-3.1.2
 tags: [ 'ruby', 'tech' ]
 comments: true
