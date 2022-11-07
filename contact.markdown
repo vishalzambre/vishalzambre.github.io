@@ -1,18 +1,49 @@
 ---
 layout: page
 title: Contact
-page_title: Contact Us
+page_title: ""
 permalink: /contact/
 ---
 
-<section class="section-cn">
-  <div class="col-md-12 row" style="padding-left:10%; padding-top:10%;">
-    <div class="col-md-6 wow fadeInLeft">
-        <h3>{{site.title}}</h3>
-    </div>
-    <div class="col-md-6 form wow fadeInRight" >
-        <p class="rg_b" style="text-align: center;font-size: 180%;width:70%">Have a query?</p>
-        <a href="mailto:{{site.email}}?subject=Looking for Technical Help"><h4 class="rg_b" style="padding-top:2%">&#128231;<span>&nbsp;&nbsp;</span>{{site.email}}</h4></a>
-    </div>
+<link rel="stylesheet" type="text/css" href="/assets/css/contact.css">
+<div class="contact1">
+  <div class="container-contact1">
+    <form class="contact1-form validate-form">
+      <span class="contact1-form-title">
+        Get in touch
+      </span>
+
+      <div class="wrap-input1 validate-input" data-validate = "Name is required">
+        <input class="input1" type="text" name="name" placeholder="Name">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input1" type="text" name="email" placeholder="Email">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+        <input class="input1" type="text" name="subject" placeholder="Subject">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Message is required">
+        <textarea class="input1" name="message" placeholder="Message"></textarea>
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="container-contact1-form-btn">
+        <button class="contact1-form-btn">
+          <span>
+            Send Email
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </form>
   </div>
-</section>
+</div>
+
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/contact.js"></script>

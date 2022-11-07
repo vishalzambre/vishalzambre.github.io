@@ -45,7 +45,6 @@ joning-date: '2012-01-11'
 # GPG on Keybase #
 ##################
 
-enable-gesture-navigation: True
 google-tracking-id: "UA-96026950-1"
 
 post-preview-words: 10
