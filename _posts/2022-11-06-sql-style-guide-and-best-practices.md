@@ -11,14 +11,7 @@ comments: true
 
 This document is written as a manual for anyone working on the Data team, but also as a guide for anyone at the company who would like to write clean and clear code that is meant to be shared.
 
-The individual tips in this guide are based on a composite of knowledge we've gleaned from experience and our roles at previous jobs.
-
-# Principles
-
-* We take a disciplined and practical approach to writing code.
-* We regularly check-in SQL to Stash as code.
-* We believe consistency in style is very important.
-* We demonstrate intent explicitly in code, via clear structure and comments where needed.
+The individual tips in this guide are based on a composite of knowledge I've gleaned from experience and our some of blogs.
 
 # Rules
 
