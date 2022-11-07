@@ -27,4 +27,4 @@ irb(main):006:0>
 If dirname received empty string or string withouth `/` then it returns the current directory.
 
 
-Not sure if this is a bug of feature &#128517;
+Not sure if this is a bug or feature &#128517;
