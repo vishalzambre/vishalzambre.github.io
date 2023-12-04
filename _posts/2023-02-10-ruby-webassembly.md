@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Ruby in WebAssembly
 category: ruby-3.2.0
-tags: [ 'tag1', 'tag2' ]
+tags: [ 'ruby', 'tech' ]
 comments: true
 ---
 
