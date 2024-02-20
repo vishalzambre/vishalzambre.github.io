@@ -20,7 +20,7 @@
 
 title: "Vishal Zambre"
 email: v.zambre@gmail.com
-designation: "Software Architect"
+designation: "Software Architect | Remote Team Lead | React Rails Engineer | Devops | Fullstack"
 description: >- # this means to ignore newlines until "baseurl:"
   Blog and website of Vishal Zambre, blogging mainly for tech. Opinions expressed are mine.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -64,7 +64,7 @@ linkedin-share: True
 events:
   - image: "/img/timeline/open-source.jpg"
     date: "April 2017 - Today"
-    description: "Working as Remote Ruby Engineer, Learning new geeky things and contributing to open source"
+    description: "Working as Remote Ruby, React Engineer, Learning new geeky things and contributing to open source"
   - image: "/img/timeline/spidertocat.png"
     date: "June 2014 - April 2017"
     description: "Started journey with Weboniselab"

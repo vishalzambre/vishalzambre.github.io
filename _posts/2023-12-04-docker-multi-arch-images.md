@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Build Multi Arch Docker Images
-category: Category
+category: docker
 tags: [ 'docker', 'multi-arch', 'devops' ]
 comments: true
 ---
