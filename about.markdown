@@ -34,10 +34,10 @@ permalink: /about/
 ## You can read more about me on
 * <a href="https://vishalzambre.com" target="_blank">https://vishalzambre.com</a>
 * <a href="https://github.com/vishalzambre" target="_blank">https://github.com/vishalzambre</a>
-* <a href="https://vishalzambre.blogspot.in/" target="_blank">https://vishalzambre.blogspot.in/</a>
+* <a href="https://vishalzambre.blogspot.in" target="_blank">https://vishalzambre.blogspot.in</a>
 * <a href="https://twitter.com/vzambre" target="_blank">https://twitter.com/vzambre</a>
-* <a href="https://www.linkedin.com/in/vishalzambre/" target="_blank">https://www.linkedin.com/in/vishalzambre/</a>
+* <a href="https://www.linkedin.com/in/vishalzambre" target="_blank">https://www.linkedin.com/in/vishalzambre</a>
 * <a href="https://github.com/spree/spree/commits?author=vishalzambre" target="_blank">https://github.com/spree/spree/commits?author=vishalzambre</a>
 * <a href=" https://contributors.rubyonrails.org/contributors/vishal-zambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishal-zambre/commits</a>
 * <a href=" https://contributors.rubyonrails.org/contributors/vishalzambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishalzambre/commits</a>
-* <a href="https://stackoverflow.com/users/2045909/vishal-zambre" target="_blank">https://stackoverflow.com/users/2045909/vishal-zambre</commits>
+* <a href="https://stackoverflow.com/users/2045909/vishal-zambre" target="_blank">https://stackoverflow.com/users/2045909/vishal-zambre</a>
