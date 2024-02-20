@@ -7,10 +7,11 @@ permalink: /about/
 {% assign today = site.time | date: '%Y' %}
 {% assign start = site.joning-date | date: '%Y'  %}
 {% assign since = today | minus: start %}
+{% assign react_exp = since | minus: 6 %}
 
 # {{site.designation}}
 * {{since}}+ Year of experience in Ruby, Rails, React Development.
-* Around {{since - 6}}+ years of experience in Handling Team Remotely.
+* Around {{react_exp}}+ years of experience in Handling Team Remotely.
 * OSS Contributor (Rails, Spree, etc), many more <a href="https://github.com/vishalzambre?tab=repositories" target="_blank">plugins</a>.
 * Experience programming on Ruby (1.9.x, 2.x.x, 3.x.x), Rails (3.x.x, 4.x.x, 5.x.x, 6.x.x, 7.x.x), Spree (1.2.x, 2.0.x, 3.x.x), Sinatra, AJAX, Mysql, JQuery, Postgresql, DevOps (Ansible, Docker, Capistrano), Snowflake, Elasticsearch, PowerDNS Tool, Fastly (CDN)
 * Experience in writing TDD and BDD using Rspec, Cucumber. Experience in handling and maintaining clean Git Repo's.
