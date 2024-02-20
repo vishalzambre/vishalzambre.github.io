@@ -1,6 +1,6 @@
 ---
 layout: page
-title: {site.designation}
+title: Software Architect | Remote Team Lead | React Rails Engineer | Devops | Fullstack
 permalink: /about/
 ---
 
