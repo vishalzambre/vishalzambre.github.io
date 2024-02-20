@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: {{site.designation}}
 permalink: /about/
 ---
 
@@ -8,8 +8,7 @@ permalink: /about/
 {% assign start = site.joning-date | date: '%Y'  %}
 {% assign since = today | minus: start %}
 {% assign react_exp = since | minus: 6 %}
-
-# {{site.designation}}
+## SUMMARY
 * {{since}}+ Year of experience in Ruby, Rails, React Development.
 * Around {{react_exp}}+ years of experience in Handling Team Remotely.
 * OSS Contributor (Rails, Spree, etc), many more <a href="https://github.com/vishalzambre?tab=repositories" target="_blank">plugins</a>.
@@ -24,3 +23,21 @@ permalink: /about/
 * Experienced working in e-commerce and Travel domain, VAS (Value Added Services), Marketplaces.
 * Experienced with Docker and other deployment scripts/tools, Ansible, Heroku, AWS, Rancher.
 * Proficiency in using AWS different services like, ECS, Kinesis, Cloudwatch, etc
+
+## QUALIFICATIONS
+
+* MCA with Distinction from North Maharashtra University, Jalgaon (Year 2013).
+* B.Sc (IT) with Distinction from North Maharashtra University, Jalgaon (Year 2010).
+* H.S.C. with First Class from Amrawati Board (Year 2007).
+* S.S.C. with First Class from Amrawati Board (Year 2005).
+
+## You can read more about me on
+• https://vishalzambre.com
+• https://github.com/vishalzambre
+• https://vishalzambre.blogspot.in/
+• https://twitter.com/vzambre
+• https://www.linkedin.com/in/vishalzambre/
+• https://github.com/spree/spree/commits?author=vishalzambre
+• https://contributors.rubyonrails.org/contributors/vishal-zambre/commits
+• https://contributors.rubyonrails.org/contributors/vishalzambre/commits
+• https://stackoverflow.com/users/2045909/vishal-zambre
