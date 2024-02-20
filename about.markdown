@@ -1,6 +1,6 @@
 ---
 layout: page
-title: {{site.designation}}
+title: {site.designation}
 permalink: /about/
 ---
 
