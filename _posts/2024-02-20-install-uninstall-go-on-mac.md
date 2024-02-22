@@ -21,24 +21,24 @@ comments: true
 
   Note: To install using the method described here, you'll need to have <a href="https://git-scm.com/" target="_blank">git</a> installed.
 
-  To install additional Go versions, run the <a href="https://go.dev/cmd/go/#hdr-Compile_and_install_packages_and_dependencies" target="_blank">go install command</a>, specifying the download location of the version you want to install. The following example illustrates with version 1.10.7:
+  To install additional Go versions, run the <a href="https://go.dev/cmd/go/#hdr-Compile_and_install_packages_and_dependencies" target="_blank">go install command</a>, specifying the download location of the version you want to install. The following example illustrates with version 1.22.0:
 
   ```
-  $ go install golang.org/dl/go1.10.7@latest
-  $ go1.10.7 download
+  $ go install golang.org/dl/go1.22.0@latest
+  $ go1.22.0 download
   ```
 
   To run go commands with the newly-downloaded version, append the version number to the go command, as follows:
 
   ```
-  $ go1.10.7 version
-  go version go1.10.7 linux/amd64
+  $ go1.22.0 version
+  go version go1.22.0 linux/amd64
   ```
 
   When you have multiple versions installed, you can discover where each is installed, look at the version's GOROOT value. For example, run a command such as the following:
 
   ```
-  $ go1.10.7 env GOROOT
+  $ go1.22.0 env GOROOT
   ```
 
   To uninstall a downloaded version, just remove the directory specified by its GOROOT environment variable and the goX.Y.Z binary.
