@@ -26,8 +26,8 @@ permalink: /about/
 
 ## QUALIFICATIONS
 
-* MCA with Distinction from North Maharashtra University, Jalgaon (Year 2013).
-* B.Sc (IT) with Distinction from North Maharashtra University, Jalgaon (Year 2010).
+* MCA with Distinction from <a href="https://nmu.ac.in/Computer_Sciences">North Maharashtra University</a>, Jalgaon (Year 2013).
+* B.Sc (IT) with Distinction from <a href="https://nmu.ac.in/Computer_Sciences">North Maharashtra University</a>, Jalgaon (Year 2010).
 * H.S.C. with First Class from Amrawati Board (Year 2007).
 * S.S.C. with First Class from Amrawati Board (Year 2005).
 
