@@ -39,5 +39,9 @@ permalink: /about/
 * <a href="https://www.linkedin.com/in/vishalzambre" target="_blank">https://www.linkedin.com/in/vishalzambre</a>
 * <a href="https://github.com/spree/spree/commits?author=vishalzambre" target="_blank">https://github.com/spree/spree/commits?author=vishalzambre</a>
 * <a href=" https://contributors.rubyonrails.org/contributors/vishal-zambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishal-zambre/commits</a>
-* <a href=" https://contributors.rubyonrails.org/contributors/vishalzambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishalzambre/commits</a>
+* <a href="https://contributors.rubyonrails.org/contributors/vishalzambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishalzambre/commits</a>
 * <a href="https://stackoverflow.com/users/2045909/vishal-zambre" target="_blank">https://stackoverflow.com/users/2045909/vishal-zambre</a>
+
+</hr>
+
+* <a href="https://www.vishalzambre.com/about/downloads/profile.pdf" target="_blank">Resume</a>
