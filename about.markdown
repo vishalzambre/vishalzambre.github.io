@@ -42,6 +42,6 @@ permalink: /about/
 * <a href="https://contributors.rubyonrails.org/contributors/vishalzambre/commits" target="_blank"> https://contributors.rubyonrails.org/contributors/vishalzambre/commits</a>
 * <a href="https://stackoverflow.com/users/2045909/vishal-zambre" target="_blank">https://stackoverflow.com/users/2045909/vishal-zambre</a>
 
-</hr>
+## Profile
 
-* <a href="https://www.vishalzambre.com/about/downloads/profile.pdf" target="_blank">Resume</a>
+* <a href="https://github.com/vishalzambre/vishalzambre.github.io/blob/main/downloads/profile.pdf" target="_blank">Resume</a>
