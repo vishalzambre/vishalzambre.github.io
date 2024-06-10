@@ -7,7 +7,7 @@ tags: [ 'git', 'devops' ]
 comments: true
 ---
 
-To set up a Git pre-commit hook to validate the length of commit messages and descriptions, you can create a script that will be executed before each commit. This script can be placed in the ``.git/hooks` directory of your repository. Here's how you can do it:
+To set up a Git pre-commit hook to validate the length of commit messages and descriptions, you can create a script that will be executed before each commit. This script can be placed in the `.git/hooks` directory of your repository. Here's how you can do it:
 
 1. Navigate to your repository:
 
@@ -16,7 +16,7 @@ cd /path/to/your/repo
 ```
 
 2. Create a pre-commit hook:
-  Create a file named `pre-commit` in the ``.git/hooks` directory:
+  Create a file named `pre-commit` in the `.git/hooks` directory:
 
 ```sh
 touch .git/hooks/pre-commit
@@ -25,7 +25,7 @@ chmod +x .git/hooks/pre-commit
 
 3. Edit the pre-commit hook:
 
-Open the ``.git/hooks/pre-commit` file in your preferred text editor and add the following script:
+Open the `.git/hooks/pre-commit` file in your preferred text editor and add the following script:
 
 ```sh
 #!/bin/sh
