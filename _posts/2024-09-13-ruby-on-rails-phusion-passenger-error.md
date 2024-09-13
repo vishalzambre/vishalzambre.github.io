@@ -36,4 +36,4 @@ If you get such error to start Phusion Passenger, then try following steps
   ```
   sudo systemctl restart nginx
 
-  Refer https://www.phusionpassenger.com/docs/references/config_reference/nginx/#passenger_preload_bundler
+  Refer [Nginx#passenger_preload_bundler](https://www.phusionpassenger.com/docs/references/config_reference/nginx/#passenger_preload_bundler)
