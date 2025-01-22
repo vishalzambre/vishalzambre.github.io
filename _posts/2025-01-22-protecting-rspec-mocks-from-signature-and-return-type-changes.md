@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Title
+title: Protecting RSpec Mocks from Signature and Return Type Changes
 category: rails
 tags:  [ 'ruby', 'rspec', 'rails' ]
 comments: true
