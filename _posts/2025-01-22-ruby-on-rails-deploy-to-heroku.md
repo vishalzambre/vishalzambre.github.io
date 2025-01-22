@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Title
-category: Category
+category: rails
 tags:  [ 'ruby', 'heroku', 'rails', 'devops' ]
 comments: true
 ---
