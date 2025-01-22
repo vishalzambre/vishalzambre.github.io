@@ -9,17 +9,18 @@ comments: true
 
 # Protecting RSpec Mocks
 
-== Description
+## Description
 
 This document describes techniques for protecting RSpec mocks against method signature
 and return type changes, ensuring more robust test suites.
 
-== Usage
+## Usage
 
-=== Basic Configuration
+### Basic Configuration
 
 Configure RSpec to use strict verification:
 
+```
   # spec/spec_helper.rb
   RSpec.configure do |config|
     config.mock_with :rspec do |mocks|
@@ -30,11 +31,13 @@ Configure RSpec to use strict verification:
       mocks.verify_doubled_constant_names = true
     end
   end
+```
 
-=== Method Signature Protection
+### Method Signature Protection
 
-==== Using instance_double
+#### Using instance_double
 
+```
   # Example class
   class UserService
     # @param user [User] The user to process
@@ -55,11 +58,13 @@ Configure RSpec to use strict verification:
         .with(user, role: "admin", notify: true)
     end
   end
+```
 
-=== Return Type Protection
+### Return Type Protection
 
-==== Basic Type Checking
+#### Basic Type Checking
 
+```
   RSpec.describe UserService do
     let(:service) { instance_double(UserService) }
 
@@ -74,11 +79,13 @@ Configure RSpec to use strict verification:
         .and_return(all(kind_of(User)))
     end
   end
+```
 
-==== Custom Type Matcher
+#### Custom Type Matcher
 
 Create a reusable type matcher:
 
+```
   RSpec::Matchers.define :be_of_type do |expected_type|
     match do |actual|
       case expected_type
@@ -96,11 +103,13 @@ Create a reusable type matcher:
     expect(service).to receive(:find_user)
       .and_return(be_of_type(User))
   end
+```
 
-=== Type System Integration
+### Type System Integration
 
-==== With Sorbet
+#### With Sorbet
 
+```
   sig { params(id: Integer).returns(User) }
   def find_user(id); end
 
@@ -109,9 +118,11 @@ Create a reusable type matcher:
       .with(type_of(Integer))
       .and_return(type_of(User))
   end
+```
 
-==== With dry-types
+#### With dry-types
 
+```
   module Types
     include Dry.Types()
 
@@ -123,43 +134,51 @@ Create a reusable type matcher:
     result = service.find_user(1)
     expect(Types::UserType.valid?(result)).to be true
   end
+```
 
-== Best Practices
+## Best Practices
 
-=== Required Arguments
+### Required Arguments
 
 Always be explicit about required arguments:
 
+```
   expect(service).to receive(:process_user)
     .with(
       kind_of(User),
       role: match(/admin|user/),  # Required
       notify: boolean             # Optional
     )
+```
 
-=== Optional Parameters
+### Optional Parameters
 
 Use flexible matching for optional parameters:
 
+```
   expect(service).to receive(:process_user)
     .with(
       anything,
       hash_including(role: "admin")  # Only specify what matters
     )
+```
 
-=== Nullable Returns
+### Nullable Returns
 
 Handle nullable return values:
 
+```
   expect(service).to receive(:find_user)
     .and_return(
       satisfy { |result| result.nil? || result.is_a?(User) }
     )
+```
 
-=== Complex Return Types
+### Complex Return Types
 
 Verify complex return structures:
 
+```
   expect(service).to receive(:get_user_stats)
     .and_return(
       match(
@@ -168,8 +187,9 @@ Verify complex return structures:
         roles: all(kind_of(Symbol))
       )
     )
+```
 
-== See Also
+## See Also
 
 * RSpec Mocks Documentation[https://rspec.info/documentation/3.12/rspec-mocks/]
 * Sorbet Documentation[https://sorbet.org/]
