@@ -631,11 +631,13 @@ This will start:
 ### Verify the setup:
 
 1. **Check service health:**
+
 ```bash
 docker-compose ps
 ```
 
 2. **View logs:**
+
 ```bash
 # All services
 docker-compose logs -f
@@ -645,6 +647,7 @@ docker-compose logs -f ws
 ```
 
 3. **Test WebSocket connection:**
+
 Open your browser to `http://localhost:3000/chat` and test the real-time messaging.
 
 ## Step 6: Production Considerations
