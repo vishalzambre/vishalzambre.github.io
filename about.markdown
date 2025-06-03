@@ -4,7 +4,7 @@
 
 layout: portfolio
 title: "About Me"
-description: "Software Architect | Remote Team Lead | React Rails Engineer | DevOps | Fullstack Developer with 12+ years of experience"
+description: "Software Architect | Remote Team Lead | React Rails Engineer | DevOps | Fullstack Developer with 13+ years of experience"
 sitemap:
   priority: 1.0
 ---
@@ -53,7 +53,7 @@ sitemap:
 
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a passionate Ruby on Rails developer with over <strong>12+ years of experience</strong> in designing, developing, and deploying high-performance web applications. I specialize in creating scalable solutions using Ruby on Rails, RESTful APIs, PostgreSQL, React, and modern DevOps technologies.</p>
+                <p>I'm a passionate Ruby on Rails developer with over <strong>{{since}}+ years of experience</strong> in designing, developing, and deploying high-performance web applications. I specialize in creating scalable solutions using Ruby on Rails, RESTful APIs, PostgreSQL, React, and modern DevOps technologies.</p>
 
                 <p>I'm adept at writing clean, efficient code and implementing TDD and BDD practices. My expertise includes system performance optimization, third-party API integration, team leadership, and leveraging AI tools like GitHub Copilot to enhance development productivity.</p>
 
@@ -62,7 +62,7 @@ sitemap:
 
             <div class="about-stats">
                 <div class="stat-item">
-                    <div class="stat-number">12+</div>
+                    <div class="stat-number">{{since}}+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
 
