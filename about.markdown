@@ -72,7 +72,7 @@ sitemap:
                 </div>
 
                 <div class="stat-item">
-                    <div class="stat-number">50+</div>
+                    <div class="stat-number">20+</div>
                     <div class="stat-label">Projects Completed</div>
                 </div>
 
