@@ -65,27 +65,6 @@ layout: portfolio
                 {{ content }}
             </article>
 
-            <!-- Post Navigation -->
-            <div class="post-navigation">
-                {% if page.previous.url %}
-                <div class="nav-item nav-previous">
-                    <div class="nav-label">Previous Post</div>
-                    <a href="{{ page.previous.url | relative_url }}" class="nav-title">
-                        {{ page.previous.title }}
-                    </a>
-                </div>
-                {% endif %}
-
-                {% if page.next.url %}
-                <div class="nav-item nav-next">
-                    <div class="nav-label">Next Post</div>
-                    <a href="{{ page.next.url | relative_url }}" class="nav-title">
-                        {{ page.next.title }}
-                    </a>
-                </div>
-                {% endif %}
-            </div>
-
             <!-- Share Section -->
             <div class="post-share">
                 <h4>Share this post</h4>
