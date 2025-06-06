@@ -4,7 +4,7 @@ section-type: post
 title: Expression Indexes and Operator Classes support for PostgreSQL
 category: rails-7.0.4
 tags: [ 'ruby', 'rails', 'tech' ]
-comments: true
+comments: false
 ---
 
 # Expression Indexes

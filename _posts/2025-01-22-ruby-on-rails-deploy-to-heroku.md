@@ -4,7 +4,7 @@ section-type: post
 title: Deploying Rails Applications to Heroku
 category: rails
 tags:  [ 'ruby', 'heroku', 'rails', 'devops' ]
-comments: true
+comments: false
 ---
 
 # Deploying Rails Applications to Heroku

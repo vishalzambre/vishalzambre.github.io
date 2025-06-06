@@ -4,7 +4,7 @@ section-type: post
 title: Go Installation and Uninstallation on Mac
 category: go
 tags: [ 'go', 'tech' ]
-comments: true
+comments: false
 ---
 
 # Installation

@@ -49,19 +49,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-# Portfolio specific settings
-##################
-# Experience #
-##################
-joning-date: '2012-01-11'
-total_experience: 12
-specializations:
-  - "Ruby on Rails"
-  - "React.js"
-  - "DevOps & Cloud"
-  - "Team Leadership"
-  - "System Architecture"
-
 ##################
 # Contact Info #
 ##################
@@ -77,8 +64,8 @@ social_links:
   linkedin: "https://linkedin.com/in/vishalzambre"
   twitter: "https://twitter.com/vzambre"
   stackoverflow: "https://stackoverflow.com/users/2045909/vishal-zambre"
-  blog: "https://vishalzambre.blogspot.in"
-  website: "https://vishalzambre.com"
+  blog: "https://vishalzambre.com"
+  website: "https://vishalzambre.com/about"
 
 ##################
 # Analytics #
@@ -107,61 +94,6 @@ twitter-share: true
 linkedin-share: true
 
 ##################
-# Portfolio Stats #
-##################
-stats:
-  experience_years: 12
-  projects_completed: 50
-  open_source_contributions: 10
-  technologies_mastered: 25
-
-##################
-# Key Skills #
-##################
-skills:
-  backend:
-    - "Ruby (1.9.x, 2.x.x, 3.x.x)"
-    - "Ruby on Rails (3.x.x to 7.x.x)"
-    - "RESTful APIs"
-    - "JBuilder & Serializers"
-    - "Rails Engines"
-    - "Sinatra"
-    - "Spree Commerce"
-
-  frontend:
-    - "JavaScript (ES6+)"
-    - "React.js"
-    - "AngularJS"
-    - "HTML5 & CSS3"
-    - "jQuery"
-    - "HAML & SASS"
-
-  databases:
-    - "PostgreSQL"
-    - "MySQL"
-    - "Redis"
-    - "Elasticsearch"
-    - "Snowflake"
-
-  devops:
-    - "AWS (EC2, S3, ECS, Kinesis)"
-    - "Docker & Kubernetes"
-    - "Ansible"
-    - "Nginx, Passenger, Unicorn"
-    - "Capistrano"
-    - "Heroku"
-    - "Rancher"
-
-  testing:
-    - "RSpec"
-    - "Cucumber"
-    - "TDD/BDD"
-    - "GitHub Actions"
-    - "Jenkins"
-    - "Circle CI"
-    - "Semaphore"
-
-##################
 # Timeline Events #
 ##################
 events:
@@ -174,48 +106,6 @@ events:
   - image: "/img/timeline/start-coding.jpg"
     date: "November 2012 - June 2014"
     description: "Started professional journey at Anchanto, building e-commerce platforms and learning enterprise development."
-
-##################
-# Featured Projects #
-##################
-featured_projects:
-  - name: "Xneelo Hosting Platform"
-    description: "Leading hosting provider in South Africa"
-    tech_stack: ["Ruby 3.0", "Rails 7.0", "React", "PostgreSQL", "AWS", "Kubernetes"]
-    period: "May 2017 - Present"
-    role: "Remote Team Lead | Software Architect"
-
-  - name: "Amazon Marketplace Integration"
-    description: "Multi-country marketplace platform for ads and campaigns"
-    tech_stack: ["Ruby 3.0", "Rails 7.0", "React", "PostgreSQL", "Snowflake"]
-    period: "2017 - 2020"
-    role: "Software Architect with Team Lead"
-
-  - name: "DataMapper Cloud Platform"
-    description: "Rails & Java platform for drone data management"
-    tech_stack: ["Ruby 1.9.3", "Rails 3.2.17", "Java", "MySQL", "AWS SDK"]
-    period: "Jun 2014 - May 2017"
-    role: "Developer"
-
-# Collections for blog posts and projects
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:name/
-
-# Defaults for different content types
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Vishal Zambre"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
 
 # SEO Plugin Settings
 tag_array: ["ruby", "rails", "react", "devops", "software-architecture", "remote-work", "fullstack"]

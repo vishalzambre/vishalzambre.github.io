@@ -4,7 +4,7 @@ section-type: post
 title: Ruby in WebAssembly
 category: ruby-3.2.0
 tags: [ 'ruby', 'tech' ]
-comments: true
+comments: false
 ---
 
 There is an official [Wasm build of Ruby](https://github.com/ruby/ruby.wasm/). It supports WASI and a wide array of features.

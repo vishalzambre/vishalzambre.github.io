@@ -4,7 +4,7 @@ section-type: post
 title: Jekyll Deployment using git hook
 category: tech
 tags: [ 'ruby', 'git', 'devops' ]
-comments: true
+comments: false
 ---
 Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. A one of them deployment techniques is described below using git hook.
 

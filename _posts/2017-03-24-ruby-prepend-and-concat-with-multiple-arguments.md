@@ -4,7 +4,7 @@ section-type: post
 title: 'String#concat, Array#concat and String#prepend Now takes multiple arguments.'
 category: ruby-2.4.0
 tags: [ 'ruby', 'tech' ]
-comments: true
+comments: false
 ---
 Now <code>String#concat</code>, <code>Array#concat</code> and <code>String#prepend</code>
 <ul class='list-unstyled text-left content'>

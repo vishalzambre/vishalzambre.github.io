@@ -4,7 +4,7 @@ section-type: post
 title: Confusing behavior of File.dirname
 category: ruby-3.1.2
 tags: [ 'ruby', 'tech' ]
-comments: true
+comments: false
 ---
 
 If you are using [File.dirname](https://ruby-doc.org/core-3.1.2/File.html#method-c-dirname) to get the directory path and delete and do some other processing on path, then make sure you consider below use cases.

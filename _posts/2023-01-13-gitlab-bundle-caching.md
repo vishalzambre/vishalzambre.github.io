@@ -4,7 +4,7 @@ section-type: post
 title: Caching in GitLab CI/CD
 category: tech
 tags: [ 'gitlab', 'ci', 'ruby' ]
-comments: true
+comments: false
 ---
 
 If you are using mutliple stages to the CI and each stage needs bundle install, cache bundle and just reuse it.

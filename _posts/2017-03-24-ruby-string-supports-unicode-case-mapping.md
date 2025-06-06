@@ -4,7 +4,7 @@ section-type: post
 title: String supports Unicode case mappings
 category: ruby-2.4.0
 tags: [ 'ruby', 'tech' ]
-comments: true
+comments: false
 ---
 <code data-trim class="yaml">String/Symbol#upcase/downcase/swapcase/capitalize(!)</code> now handle Unicode case mappings instead of only ASCII case mappings
 

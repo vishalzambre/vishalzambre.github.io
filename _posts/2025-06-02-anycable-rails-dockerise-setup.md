@@ -4,7 +4,7 @@ section-type: post
 title: Rails Anycable setup with dockerise
 category: rails
 tags: [ 'rails', 'anycable', 'docker', 'devops']
-comments: true
+comments: false
 ---
 
 # Setting up AnyCable with Rails using Docker: A Complete Guide

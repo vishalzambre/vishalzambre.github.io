@@ -4,7 +4,7 @@ section-type: post
 title: Ruby on Rails Phusion passenger error
 category: rails
 tags:  [ 'ruby', 'nginx', 'rails', 'devops' ]
-comments: true
+comments: false
 ---
 
 # Problem

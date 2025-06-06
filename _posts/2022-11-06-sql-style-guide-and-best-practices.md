@@ -4,7 +4,7 @@ section-type: post
 title: SQL Style Guide and Best Practices
 category: sql
 tags: [ 'sql', 'snowflake' ]
-comments: true
+comments: false
 ---
 
 # Data Team SQL Style Guide and Best Practices

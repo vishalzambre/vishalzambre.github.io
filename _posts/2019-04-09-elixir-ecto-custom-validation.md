@@ -4,7 +4,7 @@ section-type: post
 title: Ecto Custom Validation Elixir Phoenix
 category: elixir
 tags: [ 'elixir', 'tech' ]
-comments: true
+comments: false
 ---
 
 We often need to validate fields that are passed through a struct in Ecto

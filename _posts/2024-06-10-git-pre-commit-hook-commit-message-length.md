@@ -4,7 +4,7 @@ section-type: post
 title: Github pre commit hook to validate commit message and description
 category: git
 tags: [ 'git', 'devops' ]
-comments: true
+comments: false
 ---
 
 To set up a Git pre-commit hook to validate the length of commit messages and descriptions, you can create a script that will be executed before each commit. This script can be placed in the `.git/hooks` directory of your repository. Here's how you can do it:

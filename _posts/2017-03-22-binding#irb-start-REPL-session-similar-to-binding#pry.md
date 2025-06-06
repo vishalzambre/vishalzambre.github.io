@@ -4,7 +4,7 @@ section-type: post
 title: 'Binding#irb Start a REPL session similar to binding.pry'
 category: ruby-2.4.0
 tags: [ 'ruby', 'tech' ]
-comments: true
+comments: false
 ---
 Ruby 2.4.0 introduced new feature for debugging
 

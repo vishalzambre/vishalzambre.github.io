@@ -4,7 +4,7 @@ section-type: post
 title: Free HTTPS Using Let’s Encrypt Certbot with NGINX
 category: tech
 tags: [ 'devops', 'nginx', 'ubuntu' ]
-comments: true
+comments: false
 ---
 Let’s Encrypt is a new <i>Certificate Authority</i> which provides free SSL certificates (up to a certain limit per week). It came out of beta around a month back and is supported by a <a target='_blank' href='https://community.letsencrypt.org/t/which-browsers-and-operating-systems-support-lets-encrypt/4394'>wide array of browsers</a>.
 

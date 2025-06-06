@@ -4,7 +4,7 @@ section-type: post
 title: Build Multi Arch Docker Images
 category: docker
 tags: [ 'docker', 'multi-arch', 'devops' ]
-comments: true
+comments: false
 ---
 
 ## Build once and use anywhere
