@@ -1493,6 +1493,9 @@ html {
 }
 
 .post-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 1.5rem;

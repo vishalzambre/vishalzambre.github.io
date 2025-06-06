@@ -19,8 +19,18 @@ layout: portfolio
 
             <div class="blog-stats">
                 <div class="stat-item">
-                    {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.title" %}
-                    <span class="stat-number">{{ tag_posts.size }}</span>
+                    {% assign tag_count = 0 %}
+                    {% assign current_tag = page.title | downcase %}
+                    {% for post in site.posts %}
+                        {% for t in post.tags %}
+                            {% assign tg = t | downcase %}
+                            {% if tg == current_tag %}
+                                {% assign tag_count = tag_count | plus: 1 %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    <span class="stat-number">{{ tag_count }}</span>
                     <span class="stat-label">Posts</span>
                 </div>
             </div>
@@ -32,66 +42,71 @@ layout: portfolio
 <section class="blog-listing">
     <div class="container">
         <div class="blog-posts-grid">
-            {% assign tag = page.title %}
+            {% assign tag = page.title | downcase %}
             {% for post in site.posts %}
+                {% assign post_has_tag = false %}
                 {% for t in post.tags %}
-                    {% capture tg %}{{ t | downcase }}{% endcapture %}
+                    {% assign tg = t | downcase %}
                     {% if tg == tag %}
-                    <article class="blog-post-card">
-                        <div class="post-image">
-                            <div class="post-category-badge">
-                                {% if post.category %}{{ post.category }}{% else %}General{% endif %}
-                            </div>
-                            <div class="post-date-overlay">
-                                <span class="date-day">{{ post.date | date: "%-d" }}</span>
-                                <span class="date-month">{{ post.date | date: "%b" }}</span>
-                                <span class="date-year">{{ post.date | date: "%Y" }}</span>
-                            </div>
-                        </div>
-
-                        <div class="post-content">
-                            <div class="post-title">
-                                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                            </div>
-
-                            <div class="post-meta">
-                                <div class="post-author">
-                                    <i class="fas fa-user"></i>
-                                    {{ site.title }}
-                                </div>
-                                <div class="post-read-time">
-                                    <i class="fas fa-clock"></i>
-                                    {% assign words = post.content | number_of_words %}
-                                    {% assign reading_time = words | divided_by: 200 %}
-                                    {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
-                                </div>
-                            </div>
-
-                            <div class="post-excerpt">
-                                {{ post.excerpt | strip_html | truncatewords: 25 }}
-                            </div>
-
-                            {% if post.tags.size > 0 %}
-                            <div class="post-tags">
-                                {% for tag_item in post.tags limit:3 %}
-                                <a href="/tags/{{ tag_item }}.html" class="post-tag">#{{ tag_item }}</a>
-                                {% endfor %}
-                                {% if post.tags.size > 3 %}
-                                <span class="more-tags">+{{ post.tags.size | minus: 3 }} more</span>
-                                {% endif %}
-                            </div>
-                            {% endif %}
-
-                            <div class="post-actions">
-                                <a href="{{ post.url | relative_url }}" class="read-more-btn">
-                                    Read Article <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    {% break %}
+                        {% assign post_has_tag = true %}
+                        {% break %}
                     {% endif %}
                 {% endfor %}
+
+                {% if post_has_tag %}
+                <article class="blog-post-card">
+                    <div class="post-image">
+                        <div class="post-category-badge">
+                            {% if post.category %}{{ post.category }}{% else %}General{% endif %}
+                        </div>
+                        <div class="post-date-overlay">
+                            <span class="date-day">{{ post.date | date: "%-d" }}</span>
+                            <span class="date-month">{{ post.date | date: "%b" }}</span>
+                            <span class="date-year">{{ post.date | date: "%Y" }}</span>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </div>
+
+                        <div class="post-meta">
+                            <div class="post-author">
+                                <i class="fas fa-user"></i>
+                                {{ site.title }}
+                            </div>
+                            <div class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                {% assign words = post.content | number_of_words %}
+                                {% assign reading_time = words | divided_by: 200 %}
+                                {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
+                            </div>
+                        </div>
+
+                        <div class="post-excerpt">
+                            {{ post.excerpt | strip_html | truncatewords: 25 }}
+                        </div>
+
+                        {% if post.tags.size > 0 %}
+                        <div class="post-tags">
+                            {% for tag_item in post.tags limit:3 %}
+                            <a href="/tags/{{ tag_item | downcase }}.html" class="post-tag">#{{ tag_item }}</a>
+                            {% endfor %}
+                            {% if post.tags.size > 3 %}
+                            <span class="more-tags">+{{ post.tags.size | minus: 3 }} more</span>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+
+                        <div class="post-actions">
+                            <a href="{{ post.url | relative_url }}" class="read-more-btn">
+                                Read Article <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                {% endif %}
             {% endfor %}
         </div>
 
