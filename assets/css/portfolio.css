@@ -293,6 +293,25 @@ a:hover {
     justify-content: center;
     font-size: 3rem;
     color: white;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-avatar i {
+    font-size: 3rem;
+    color: white;
 }
 
 .profile-info h3 {
@@ -1493,8 +1512,6 @@ html {
 }
 
 .post-content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 300px;
     gap: 4rem;
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -1660,7 +1677,6 @@ html {
 /* Post Share */
 .post-share {
     margin: 3rem 0;
-    padding: 2rem;
     background-color: var(--bg-secondary);
     border-radius: var(--border-radius);
     text-align: center;

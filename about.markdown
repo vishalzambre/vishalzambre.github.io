@@ -31,7 +31,7 @@ sitemap:
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <i class="fas fa-user-tie"></i>
+                        <img src="/assets/images/profile.png" alt="Vishal Zambre">
                     </div>
                     <div class="profile-info">
                         <h3>{{ site.title }}</h3>
