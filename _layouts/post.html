@@ -1,56 +1,180 @@
 ---
-layout: default
+layout: portfolio
 ---
 
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+<!-- Blog Post Hero Section -->
+<section class="blog-post-hero">
+    <div class="container">
+        <div class="post-header">
+            <div class="post-breadcrumb">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>{{ page.title }}</span>
+            </div>
 
-<section id="post" class="container content-section text-center">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <h1><strong>{{ page.title }}</strong></h1>
-      <h4>
-        <strong>{{ page.date | date_to_string }}</strong>
-        <small>
-          | category:
-          <a class="category" href="/categories/{{page.category | downcase}}.html">
-            {{ page.category }}
-          </a> |
-          <a href="{{page.url }}#disqus_thread">Comments</a>
-          <br />
-          {% for tag in page.tags %}
-            <a class="tag" href="/tags/{{tag}}.html">#{{ tag }}</a>
-          {% endfor %}
-        </small>
-      </h4>
+            <h1 class="post-title">{{ page.title }}</h1>
 
-      {{ page.content | markdownify }}
+            <div class="post-meta">
+                <div class="post-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-info">
+                        <span class="author-name">{{ site.title }}</span>
+                        <span class="author-title">{{ site.designation | split: ' | ' | first }}</span>
+                    </div>
+                </div>
 
-      {% include share.html %}
-      <br/>
-      <hr />
+                <div class="post-details">
+                    <div class="post-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ page.date | date: "%B %-d, %Y" }}
+                    </div>
+                    <div class="post-read-time">
+                        <i class="fas fa-clock"></i>
+                        {% assign words = page.content | number_of_words %}
+                        {% assign reading_time = words | divided_by: 200 %}
+                        {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
+                    </div>
+                </div>
+            </div>
+
+            {% if page.tags.size > 0 %}
+            <div class="post-tags">
+                {% for tag in page.tags %}
+                <a href="/tags/{{ tag }}.html" class="post-tag">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if page.category %}
+            <div class="post-category">
+                <i class="fas fa-folder"></i>
+                <a href="/categories/{{ page.category | downcase }}.html">{{ page.category }}</a>
+            </div>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </section>
 
-{% if page.comments %}
-  <script id="dsq-count-scr" src="//httpsvishalz.disqus.com/count.js" async></script>
-  <div id="disqus_thread"></div>
-  <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://httpsvishalz.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+<!-- Blog Post Content -->
+<section class="blog-post-content">
+    <div class="container">
+        <div class="post-content-wrapper">
+            <article class="post-article">
+                {{ content }}
+            </article>
+
+            <!-- Post Navigation -->
+            <div class="post-navigation">
+                {% if page.previous.url %}
+                <div class="nav-item nav-previous">
+                    <div class="nav-label">Previous Post</div>
+                    <a href="{{ page.previous.url | relative_url }}" class="nav-title">
+                        {{ page.previous.title }}
+                    </a>
+                </div>
+                {% endif %}
+
+                {% if page.next.url %}
+                <div class="nav-item nav-next">
+                    <div class="nav-label">Next Post</div>
+                    <a href="{{ page.next.url | relative_url }}" class="nav-title">
+                        {{ page.next.title }}
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Share Section -->
+            <div class="post-share">
+                <h4>Share this post</h4>
+                {% include share.html %}
+            </div>
+
+            <!-- Comments Section -->
+            {% if page.comments %}
+            <div class="post-comments">
+                <h4>Comments</h4>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = "{{ site.url }}{{ page.url }}";
+                        this.page.identifier = "{{ page.url }}";
+                    };
+
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://{{ site.disqus.name }}.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>
+                    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+            <!-- Recent Posts -->
+            <div class="sidebar-widget">
+                <h4>Recent Posts</h4>
+                <ul class="recent-posts">
+                    {% for post in site.posts limit:5 %}
+                    {% unless post.url == page.url %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    </li>
+                    {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Popular Tags -->
+            <div class="sidebar-widget">
+                <h4>Popular Tags</h4>
+                <div class="tag-cloud">
+                    {% assign tags = site.tags | sort %}
+                    {% for tag in tags limit:15 %}
+                    <a href="/tags/{{ tag[0] }}.html" class="tag-item">#{{ tag[0] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- About Author -->
+            <div class="sidebar-widget author-widget">
+                <h4>About the Author</h4>
+                <div class="author-bio">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="author-details">
+                        <h5>{{ site.title }}</h5>
+                        <p>{{ site.description | truncatewords: 20 }}</p>
+                        <div class="author-social">
+                            {% if site.github_username %}
+                            <a href="https://github.com/{{ site.github_username }}" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            {% endif %}
+                            {% if site.linkedin_username %}
+                            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            {% endif %}
+                            {% if site.twitter_username %}
+                            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>

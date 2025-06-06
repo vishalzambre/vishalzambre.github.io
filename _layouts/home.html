@@ -1,0 +1,122 @@
+---
+layout: portfolio
+---
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to <span class="highlight">{{ site.title }}'s</span> Blog</h1>
+                <h2>{{ site.designation }}</h2>
+                <p>{{ site.description }}</p>
+                <div class="hero-buttons">
+                    <a href="/about" class="btn btn-primary">About Me</a>
+                    <a href="#blog-posts" class="btn btn-secondary">Read Posts</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>{{ site.title }}</h3>
+                        <p>Software Architect & Tech Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts Section -->
+<section id="blog-posts" class="blog-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Latest <span class="highlight">Blog Posts</span></h2>
+            <p>Insights about software architecture, modern development practices, and tech leadership</p>
+        </div>
+
+        <div class="blog-posts-grid">
+            {% for post in site.posts limit:6 %}
+            <article class="blog-post-card">
+                <div class="post-title">
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </div>
+
+                <div class="post-meta">
+                    <div class="post-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ post.date | date: "%B %-d, %Y" }}
+                    </div>
+                    {% if post.tags.size > 0 %}
+                    <div class="post-tags">
+                        {% for tag in post.tags limit:3 %}
+                        <span class="post-tag">#{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="post-excerpt">
+                    {{ post.excerpt | strip_html | truncatewords: 30 }}
+                </div>
+
+                <a href="{{ post.url | relative_url }}" class="read-more-link">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+
+        <div class="blog-cta">
+            <a href="/blog" class="btn btn-primary">View All Posts</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Preview Section -->
+<section class="skills">
+    <div class="container">
+        <div class="section-header">
+            <h2>Core <span class="highlight">Technologies</span></h2>
+            <p>Primary technologies and tools I work with regularly</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <i class="fab fa-js-square"></i>
+                <h3>Frontend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">CSS/SCSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Ruby on Rails</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <i class="fab fa-aws"></i>
+                <h3>DevOps & Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

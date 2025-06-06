@@ -1,0 +1,210 @@
+---
+layout: portfolio
+title: "Blog - All Posts"
+description: "Technical insights, tutorials, and thoughts on software development, architecture, and modern programming practices"
+permalink: /blog/
+sitemap:
+  priority: 1.0
+---
+
+<!-- Blog Hero Section -->
+<section class="blog-hero">
+    <div class="container">
+        <div class="blog-header">
+            <div class="blog-breadcrumb">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+
+            <h1>Technical <span class="highlight">Blog</span></h1>
+            <p>In-depth articles about software architecture, development practices, and emerging technologies</p>
+
+            <div class="blog-stats">
+                <div class="stat-item">
+                    <span class="stat-number">{{ site.posts.size }}</span>
+                    <span class="stat-label">Total Posts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">{{ site.tags.size }}</span>
+                    <span class="stat-label">Topics</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">{{ site.categories.size }}</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Filter Section -->
+<section class="blog-filters">
+    <div class="container">
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Posts</button>
+            {% assign categories = site.categories | sort %}
+            {% for category in categories limit:5 %}
+            <button class="filter-tab" data-filter="{{ category[0] | downcase }}">{{ category[0] }}</button>
+            {% endfor %}
+        </div>
+
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="blog-search" placeholder="Search posts...">
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts Grid -->
+<section class="blog-listing">
+    <div class="container">
+        <div class="blog-posts-grid" id="blog-posts-grid">
+            {% for post in site.posts %}
+            <article class="blog-post-card" data-category="{{ post.category | downcase }}" data-title="{{ post.title | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
+                <div class="post-image">
+                    <div class="post-category-badge">
+                        {% if post.category %}{{ post.category }}{% else %}General{% endif %}
+                    </div>
+                    <div class="post-date-overlay">
+                        <span class="date-day">{{ post.date | date: "%-d" }}</span>
+                        <span class="date-month">{{ post.date | date: "%b" }}</span>
+                        <span class="date-year">{{ post.date | date: "%Y" }}</span>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <div class="post-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-author">
+                            <i class="fas fa-user"></i>
+                            {{ site.title }}
+                        </div>
+                        <div class="post-read-time">
+                            <i class="fas fa-clock"></i>
+                            {% assign words = post.content | number_of_words %}
+                            {% assign reading_time = words | divided_by: 200 %}
+                            {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
+                        </div>
+                    </div>
+
+                    <div class="post-excerpt">
+                        {{ post.excerpt | strip_html | truncatewords: 25 }}
+                    </div>
+
+                    {% if post.tags.size > 0 %}
+                    <div class="post-tags">
+                        {% for tag in post.tags limit:3 %}
+                        <a href="/tags/{{ tag }}.html" class="post-tag">#{{ tag }}</a>
+                        {% endfor %}
+                        {% if post.tags.size > 3 %}
+                        <span class="more-tags">+{{ post.tags.size | minus: 3 }} more</span>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    <div class="post-actions">
+                        <a href="{{ post.url | relative_url }}" class="read-more-btn">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="post-share-quick">
+                            <button class="share-btn" title="Share">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <!-- Load More / Pagination -->
+        <div class="blog-pagination">
+            {% if paginator %}
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | relative_url }}" class="btn btn-secondary">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </a>
+                {% endif %}
+
+                <div class="page-numbers">
+                    {% for page in (1..paginator.total_pages) %}
+                        {% if page == paginator.page %}
+                            <span class="current-page">{{ page }}</span>
+                        {% elsif page == 1 %}
+                            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+                        {% else %}
+                            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | relative_url }}" class="btn btn-secondary">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </a>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- Blog CTA Section -->
+<section class="blog-cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h3>Want to stay updated?</h3>
+            <p>Get notified about new posts and updates in software development</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="/about" class="btn btn-secondary">Learn More About Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Blog filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const blogPosts = document.querySelectorAll('.blog-post-card');
+    const searchInput = document.getElementById('blog-search');
+
+    // Filter by category
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+
+            blogPosts.forEach(post => {
+                if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Search functionality
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+
+        blogPosts.forEach(post => {
+            const title = post.getAttribute('data-title');
+            const tags = post.getAttribute('data-tags');
+
+            if (title.includes(searchTerm) || tags.includes(searchTerm)) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+    });
+});
+</script>

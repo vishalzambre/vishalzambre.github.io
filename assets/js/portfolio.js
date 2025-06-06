@@ -359,6 +359,71 @@
         });
     }
 
+    // Code Syntax Highlighting
+    function initSyntaxHighlighting() {
+        // Load highlight.js if not already loaded
+        if (typeof hljs === 'undefined') {
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js';
+            script.onload = function() {
+                hljs.highlightAll();
+            };
+            document.head.appendChild(script);
+        } else {
+            hljs.highlightAll();
+        }
+    }
+
+    // Blog Search Functionality
+    function initBlogSearch() {
+        const searchInput = document.getElementById('blog-search');
+        if (!searchInput) return;
+
+        const blogPosts = document.querySelectorAll('.blog-post-card');
+
+        searchInput.addEventListener('input', debounce(function() {
+            const searchTerm = this.value.toLowerCase();
+
+            blogPosts.forEach(post => {
+                const title = post.getAttribute('data-title') || '';
+                const tags = post.getAttribute('data-tags') || '';
+                const excerpt = post.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
+
+                if (title.includes(searchTerm) ||
+                    tags.includes(searchTerm) ||
+                    excerpt.includes(searchTerm)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }, 300));
+    }
+
+    // Blog Filter Tabs
+    function initBlogFilters() {
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const blogPosts = document.querySelectorAll('.blog-post-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                filterTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                blogPosts.forEach(post => {
+                    if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
     // Initialize all functions when DOM is loaded
     function init() {
         initMobileNavigation();
@@ -373,6 +438,9 @@
         initSocialTracking();
         initLazyLoading();
         initPrintStyles();
+        initSyntaxHighlighting();
+        initBlogSearch();
+        initBlogFilters();
 
         // Add debounced scroll listeners
         window.addEventListener('scroll', debounce(function() {
