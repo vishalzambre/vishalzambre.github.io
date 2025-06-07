@@ -531,7 +531,15 @@ sitemap:
                         <i class="fas fa-envelope"></i>
                         <div>
                             <strong>Email</strong>
-                            <p>{{ site.email }}</p>
+                            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="tel:+918275340747"><span>+91 8275340747</span></a></p>
                         </div>
                     </div>
 
