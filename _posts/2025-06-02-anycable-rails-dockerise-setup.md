@@ -117,7 +117,7 @@ development:
   <<: *default
 
 test:
-  <<: *default
+  <<: test
 
 production:
   channel_prefix: <%= ENV.fetch('ANYCABLE_REDIS_CHANNEL_PREFIX', 'myapp_production') %>
