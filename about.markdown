@@ -10,17 +10,13 @@ sitemap:
 ---
 
 <!-- Hero Section -->
-{% assign today = site.time | date: '%Y' %}
-{% assign start = site.joning-date | date: '%Y'  %}
-{% assign since = today | minus: start %}
-{% assign react_exp = since | minus: 6 %}
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hi, I'm <span class="highlight">{{ site.title }}</span></h1>
                 <h2>{{ site.designation }}</h2>
-                <p>With over <strong>{{since}}+ years of experience</strong> in designing, developing, and deploying high-performance web applications. Proficient in Ruby on Rails, RESTful APIs, React, and modern DevOps technologies. Passionate about clean code, TDD/BDD practices, and leveraging AI tools to enhance development productivity.</p>
+                <p>With over <strong>13+ years of experience</strong> in designing, developing, and deploying high-performance web applications. Proficient in Ruby on Rails, RESTful APIs, React, and modern DevOps technologies. Passionate about clean code, TDD/BDD practices, and leveraging AI tools to enhance development productivity.</p>
 
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -53,7 +49,7 @@ sitemap:
 
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a passionate Ruby on Rails developer with over <strong>{{since}}+ years of experience</strong> in designing, developing, and deploying high-performance web applications. I specialize in creating scalable solutions using Ruby on Rails, RESTful APIs, PostgreSQL, React, and modern DevOps technologies.</p>
+                <p>I'm a passionate Ruby on Rails developer with over <strong>13+ years of experience</strong> in designing, developing, and deploying high-performance web applications. I specialize in creating scalable solutions using Ruby on Rails, RESTful APIs, PostgreSQL, React, and modern DevOps technologies.</p>
 
                 <p>I'm adept at writing clean, efficient code and implementing TDD and BDD practices. My expertise includes system performance optimization, third-party API integration, team leadership, and leveraging AI tools like GitHub Copilot to enhance development productivity.</p>
 
@@ -62,7 +58,7 @@ sitemap:
 
             <div class="about-stats">
                 <div class="stat-item">
-                    <div class="stat-number">{{since}}+</div>
+                    <div class="stat-number">13+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
 
