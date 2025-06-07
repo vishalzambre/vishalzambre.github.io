@@ -466,47 +466,68 @@ sitemap:
 
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">May 2017 - Present</div>
+                <div class="timeline-header">
+                    <div class="timeline-date">May 2017 - Present</div>
+                    <div class="timeline-company">Remote Consultant | Freelance</div>
+                </div>
                 <div class="timeline-content">
                     <h3>Remote Team Lead | Software Architect | React Rails Engineer | DevOps</h3>
-                    <h4>Freelance</h4>
-                    <p>Leading remote teams and architecting scalable solutions for hosting providers, marketplaces, and enterprise applications. Managing technical decisions, code reviews, and deployment strategies.</p>
-                    <ul>
-                        <li>Led development of hosting platform serving South African market</li>
-                        <li>Architected Amazon marketplace integration handling multi-country campaigns</li>
-                        <li>Implemented modern DevOps practices with Docker, Kubernetes, and CI/CD</li>
-                        <li>Mentored teams across different time zones and cultures</li>
-                    </ul>
+                    <div class="timeline-summary">
+                        <p>Leading remote teams and architecting scalable solutions for hosting providers, marketplaces, and enterprise applications. Managing technical decisions, code reviews, and deployment strategies.</p>
+                    </div>
+                    <div class="timeline-achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Led development of hosting platform serving South African market</li>
+                            <li>Architected Amazon marketplace integration handling multi-country campaigns</li>
+                            <li>Implemented modern DevOps practices with Docker, Kubernetes, and CI/CD</li>
+                            <li>Mentored teams across different time zones and cultures</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">Jun 2014 - May 2017</div>
+                <div class="timeline-header">
+                    <div class="timeline-date">Jun 2014 - May 2017</div>
+                    <div class="timeline-company">Weboniselab Pvt Ltd</div>
+                </div>
                 <div class="timeline-content">
                     <h3>Senior Software Engineer</h3>
-                    <h4>Weboniselab pvt ltd</h4>
-                    <p>Developed complex applications ranging from drone data management platforms to custom e-commerce solutions, focusing on scalability and performance optimization.</p>
-                    <ul>
-                        <li>Built DataMapper cloud platform for aerial data processing</li>
-                        <li>Developed Fabrily custom apparel platform with zero-risk business model</li>
-                        <li>Implemented comprehensive testing strategies with RSpec and Cucumber</li>
-                        <li>Worked with diverse tech stack including Ruby, Rails, Java, and cloud services</li>
-                    </ul>
+                    <div class="timeline-summary">
+                        <p>Developed complex applications ranging from drone data management platforms to custom e-commerce solutions, focusing on scalability and performance optimization.</p>
+                    </div>
+                    <div class="timeline-achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Built DataMapper cloud platform for aerial data processing</li>
+                            <li>Developed Fabrily custom apparel platform with zero-risk business model</li>
+                            <li>Implemented comprehensive testing strategies with RSpec and Cucumber</li>
+                            <li>Worked with diverse tech stack including Ruby, Rails, Java, and cloud services</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">Nov 2012 - Jun 2014</div>
+                <div class="timeline-header">
+                    <div class="timeline-date">Nov 2012 - Jun 2014</div>
+                    <div class="timeline-company">Anchanto Services Pvt Ltd Pune</div>
+                </div>
                 <div class="timeline-content">
                     <h3>Software Engineer</h3>
-                    <h4>Anchanto Services Pvt Ltd Pune</h4>
-                    <p>Started my professional journey building e-commerce applications and learning enterprise-level development practices in a dynamic startup environment.</p>
-                    <ul>
-                        <li>Developed MyLifeInc e-commerce platform for Singapore market</li>
-                        <li>Built Ship.li platform for SME online retail solutions</li>
-                        <li>Gained expertise in payment gateway integrations and third-party APIs</li>
-                        <li>Contributed to architectural decisions and deployment strategies</li>
-                    </ul>
+                    <div class="timeline-summary">
+                        <p>Started my professional journey building e-commerce applications and learning enterprise-level development practices in a dynamic startup environment.</p>
+                    </div>
+                    <div class="timeline-achievements">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Developed MyLifeInc e-commerce platform for Singapore market</li>
+                            <li>Built Ship.li platform for SME online retail solutions</li>
+                            <li>Gained expertise in payment gateway integrations and third-party APIs</li>
+                            <li>Contributed to architectural decisions and deployment strategies</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
