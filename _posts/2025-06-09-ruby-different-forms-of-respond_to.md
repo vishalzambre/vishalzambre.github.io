@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title:  Ruby: Different forms of respond_to? have different behaviors
+title:  Ruby different forms of respond_to? have different behaviors
 category: ruby
 tags: [ 'ruby', 'tech' ]
 comments: false
