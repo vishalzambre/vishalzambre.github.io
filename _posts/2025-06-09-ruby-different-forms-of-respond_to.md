@@ -7,6 +7,8 @@ tags: [ 'ruby', 'tech' ]
 comments: false
 ---
 
+# Different forms of respond_to? have different behaviors
+
 Ruby's `respond_to?` method is a powerful tool for checking whether an object can respond to a particular method call. However, many Ruby developers aren't aware that this method has different forms that exhibit different behaviors, particularly when it comes to method visibility.
 
 ## The Basic Form: `respond_to?(:method_name)`
