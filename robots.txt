@@ -1,0 +1,48 @@
+# Robots.txt for vishalzambre.github.io
+# Allow all crawlers including AI models like OpenAI GPT, Claude, etc.
+
+User-agent: *
+Allow: /
+
+# Specifically allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Allow OpenAI and other AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Block access to certain directories
+Disallow: /.git/
+Disallow: /.jekyll-cache/
+Disallow: /_site/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.sass-cache/
+
+# Sitemap location
+Sitemap: https://vishalzambre.github.io/sitemap.xml
+
+# Crawl-delay (optional, helps prevent overloading)
+Crawl-delay: 1

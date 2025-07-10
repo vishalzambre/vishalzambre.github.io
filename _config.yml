@@ -11,7 +11,7 @@
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Experienced Software Architect and Remote Team Lead with 13+ years in Ruby on Rails, React, and DevOps.
   OSS contributor to Rails and Spree, passionate about clean code, TDD/BDD practices, and modern development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://vishalzambre.github.io" # the base hostname & protocol for your site
+url: "https://www.vishalzambre.com" # the base hostname & protocol for your site
 twitter_username: vzambre
 github_username: vishalzambre
 linkedin_username: vishalzambre
@@ -40,6 +40,22 @@ social:
     - "https://github.com/vishalzambre"
     - "https://linkedin.com/in/vishalzambre"
 
+# Enhanced SEO Settings
+seo:
+  type: "Person"
+  name: "Vishal Zambre"
+  image: "/assets/images/profile.png"
+  logo: "/assets/images/profile.png"
+  date_format: "%B %d, %Y"
+
+# Open Graph defaults
+og_image: "/assets/images/profile.png"
+twitter_image: "/assets/images/profile.png"
+
+# Language and Locale
+lang: "en-US"
+locale: "en_US"
+
 # Build settings
 theme: minima
 plugins:
@@ -48,6 +64,30 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-redirect-from
+
+# Jekyll SEO Tag settings
+jekyll-seo-tag:
+  title: true
+  description: true
+  image: true
+  author: true
+  twitter:
+    username: vzambre
+    card: summary_large_image
+
+# Feed settings
+feed:
+  posts_limit: 20
+  excerpt_only: false
+
+# Sitemap settings
+sitemap:
+  exclude:
+    - "/404.html"
+    - "/feed.xml"
+    - "/tags/"
+    - "/categories/"
 
 ##################
 # Contact Info #
@@ -111,6 +151,43 @@ events:
 # SEO Plugin Settings
 tag_array: ["ruby", "rails", "react", "devops", "software-architecture", "remote-work", "fullstack"]
 
+# Default front matter for posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Vishal Zambre"
+      show_date: true
+      show_excerpts: true
+      comments: true
+      share: true
+      related: true
+
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Vishal Zambre"
+
+# Performance optimizations
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: development
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+
 # Exclude from processing
 exclude:
   - .sass-cache/
@@ -125,3 +202,14 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE.md
+  - "*.gem"
+  - "*.gemspec"
+  - "Rakefile"
+  - "package.json"
+  - "package-lock.json"
+  - "*.log"
+
+# Include in processing
+include:
+  - .htaccess
+  - _pages
