@@ -7,7 +7,7 @@ tags: [ 'git', 'tech', 'devops' ]
 comments: false
 ---
 
-## Creating Pull Requests with Jira References Using GitHub CLI
+# Creating Pull Requests with Jira References Using GitHub CLI
 
 Managing pull requests in development workflows often requires linking them to Jira tickets and including relevant commit information. Manually creating PRs with formatted bodies containing Jira links and commit details can be time-consuming and error-prone. In this post, I'll demonstrate how to automate this process using GitHub CLI (`gh`) with a custom shell function.
 
