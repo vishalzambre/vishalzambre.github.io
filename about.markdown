@@ -192,7 +192,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Custom Apparel E-Commerce Platform</h4>
-                        <span class="project-period">May 2024 - Present</span>
                     </div>
                     <p>Built custom T-shirt creation and e-commerce platforms with design tools, payment integration, and order management systems. Implemented Redis for caching and Sidekiq for background processing.</p>
                     <div class="project-tech">
@@ -211,7 +210,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Amazon Marketplace Integration</h4>
-                        <span class="project-period">2017 - 2020</span>
                     </div>
                     <p>Marketplace platform for ads and campaigns at Amazon, working across different countries with comprehensive data analytics and campaign management.</p>
                     <div class="project-tech">
@@ -227,7 +225,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Hosting Platform</h4>
-                        <span class="project-period">May 2017 - 2022</span>
                     </div>
                     <p>Leading hosting provider platform in South Africa with comprehensive digital services including domain management, hosting solutions, and integrated marketing tools.</p>
                     <div class="project-tech">
@@ -244,7 +241,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Amazon Marketplace Integration</h4>
-                        <span class="project-period">2017 - 2020</span>
                     </div>
                     <p>Marketplace platform for ads and campaigns at Amazon, working across different countries with comprehensive data analytics and campaign management.</p>
                     <div class="project-tech">
@@ -260,7 +256,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>E-Commerce Platform</h4>
-                        <span class="project-period">2013 - 2015</span>
                     </div>
                     <p>E-commerce platform for flower bouquet and cake delivery in UAE and Qatar with comprehensive order management and payment integration.</p>
                     <div class="project-tech">
@@ -283,7 +278,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>DataMapper Cloud Platform</h4>
-                        <span class="project-period">Jun 2014 - May 2017</span>
                     </div>
                     <p>Combination of Rails & Java for managing user portals, billing, surveys, and aerial data processing. Cloud-based application for drone data management.</p>
                     <div class="project-tech">
@@ -299,7 +293,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Review Platform</h4>
-                        <span class="project-period">2015 - 2017</span>
                     </div>
                     <p>Review collection platform working across Shopify, Ecwid, Squarespace, and WooCommerce with advanced analytics and customer feedback management.</p>
                     <div class="project-tech">
@@ -315,7 +308,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Health Management</h4>
-                        <span class="project-period">2016 - 2018</span>
                     </div>
                     <p>Health domain project for managing Gym ERP with detailed user reports, attendance tracking, and employee management for mobile and web platforms.</p>
                     <div class="project-tech">
@@ -338,7 +330,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Property Insurance Platform</h4>
-                        <span class="project-period">2018 - 2020</span>
                     </div>
                     <p>Big insurance platform in the US dealing with renter insurance, integrated with different Property Management Systems (PMS) for comprehensive coverage.</p>
                     <div class="project-tech">
@@ -361,7 +352,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Value Added Services Platform</h4>
-                        <span class="project-period">2014 - 2016</span>
                     </div>
                     <p>Content and mobile payment platform through mobile recharge and postpaid bills with comprehensive business rules and client management across 3 sections.</p>
                     <div class="project-tech">
@@ -377,7 +367,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Mobile Content Delivery</h4>
-                        <span class="project-period">2013 - 2015</span>
                     </div>
                     <p>Value Added Services Domain project for mobile payments and content delivery across Europe & UK with multi-country payment gateway integration.</p>
                     <div class="project-tech">
@@ -400,7 +389,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Tourism Service</h4>
-                        <span class="project-period">2015 - 2017</span>
                     </div>
                     <p>Epitome of Inbound Tourism in UAE from Russia, leading Commonwealth of Independent States (CIS) market with comprehensive booking and management system.</p>
                     <div class="project-tech">
@@ -423,7 +411,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Fabrily Custom T-Shirt Platform</h4>
-                        <span class="project-period">2014 - 2017</span>
                     </div>
                     <p>Platform for creating custom T-shirts with no costs or hassle, handling payment, printing, shipping, and profit distribution with live deployments and code reviews.</p>
                     <div class="project-tech">
@@ -439,7 +426,6 @@ sitemap:
                 <div class="project-card">
                     <div class="project-header">
                         <h4>Teespring Custom Apparel</h4>
-                        <span class="project-period">2016 - 2017</span>
                     </div>
                     <p>Similar to Fabrily, enabling creation and sale of custom apparel with zero upfront costs and zero risk, managing the complete supply chain.</p>
                     <div class="project-tech">
