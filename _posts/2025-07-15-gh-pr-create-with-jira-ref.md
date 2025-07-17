@@ -53,7 +53,7 @@ create_pr_with_jira() {
   $commit_section"
 
   gh pr create --base "$base_branch" --head "$current_branch" --title "$pr_title" --body "$pr_body" \
-    --reviewer github/review-team --assignee @me --add-label "trigger-ci"
+    --reviewer github/review-team --assignee @me --label "trigger-ci"
 }
 ```
 
@@ -118,7 +118,7 @@ The function creates a structured PR body with two sections:
 ### 5. PR Creation
 ```bash
 gh pr create --base "$base_branch" --head "$current_branch" --title "$pr_title" --body "$pr_body" \
-  --reviewer github/review-team --assignee @me --add-label "trigger-ci"
+  --reviewer github/review-team --assignee @me --label "trigger-ci"
 ```
 
 Finally, it uses GitHub CLI to create the PR with:
@@ -180,7 +180,7 @@ local jira_domain="your-company.atlassian.net"
 ### Modify Reviewers and Labels
 ```bash
 gh pr create --base "$base_branch" --head "$current_branch" --title "$pr_title" --body "$pr_body" \
-  --reviewer your-team/reviewers --assignee @me --add-label "feature, ready-for-review"
+  --reviewer your-team/reviewers --assignee @me --label "feature, ready-for-review"
 ```
 
 ### Different Jira Ticket Pattern
