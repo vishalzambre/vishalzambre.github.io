@@ -4,7 +4,7 @@ section-type: post
 title: Setting up Google Ads API for Offline Upload with OAuth2 Authentication
 category: tech
 tags: [ 'google-ads', 'oauth2', 'api', 'ruby', 'authentication' ]
-comments: true
+comments: false
 ---
 
 # Setting up Google Ads API for Offline Upload with OAuth2 Authentication
