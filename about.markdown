@@ -21,6 +21,7 @@ sitemap:
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/17oaF2oM4nQBZEdwJw-Q39atUgVxNdMmM/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
                 </div>
             </div>
 
