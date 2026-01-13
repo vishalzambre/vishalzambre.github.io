@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   OSS contributor to Rails and Spree, passionate about clean code, TDD/BDD practices, and modern development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.vishalzambre.com" # the base hostname & protocol for your site
-twitter_username: vzambre
+twitter_username: vishzambre
 github_username: vishalzambre
 linkedin_username: vishalzambre
 keywords: "vishal, zambre, software architect, ruby on rails, react, devops, remote team lead, fullstack developer, jekyll, spree, aws, docker, kubernetes"
@@ -36,7 +36,7 @@ author: "Vishal Zambre"
 social:
   name: "Vishal Zambre"
   links:
-    - "https://twitter.com/vzambre"
+    - "https://twitter.com/vishzambre"
     - "https://github.com/vishalzambre"
     - "https://linkedin.com/in/vishalzambre"
 
@@ -73,7 +73,7 @@ jekyll-seo-tag:
   image: true
   author: true
   twitter:
-    username: vzambre
+    username: vishzambre
     card: summary_large_image
 
 # Feed settings
@@ -102,7 +102,7 @@ response_time: "Within 24 hours"
 social_links:
   github: "https://github.com/vishalzambre"
   linkedin: "https://linkedin.com/in/vishalzambre"
-  twitter: "https://twitter.com/vzambre"
+  twitter: "https://twitter.com/vishzambre"
   stackoverflow: "https://stackoverflow.com/users/2045909/vishal-zambre"
   blog: "https://vishalzambre.com"
   website: "https://vishalzambre.com/about"

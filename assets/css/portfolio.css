@@ -1586,12 +1586,17 @@ html {
     flex-wrap: wrap;
 }
 
-.post-date, .post-read-time {
+.post-date, .post-read-time, .post-views {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--text-secondary);
     font-size: 0.875rem;
+}
+
+.post-views img {
+    height: 20px;
+    display: inline-block;
 }
 
 .post-tags {

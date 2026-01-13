@@ -36,6 +36,10 @@ layout: portfolio
                         {% assign reading_time = words | divided_by: 200 %}
                         {% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} min read
                     </div>
+                    <div class="post-views">
+                        <i class="fas fa-eye"></i>
+                        <img src="https://hitscounter.dev/api/count/incr/badge.svg?url={{ site.url | url_encode }}{{ page.url | url_encode }}&count_bg=%232c3e50&title_bg=%232c3e50&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false" alt="Views" style="vertical-align: middle; margin-left: 5px;">
+                    </div>
                 </div>
             </div>
 
