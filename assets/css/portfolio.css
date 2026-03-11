@@ -172,10 +172,16 @@ a:hover {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    line-height: 1;
+}
+
+.nav-logo img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .nav-menu {
@@ -885,6 +891,10 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    .nav-logo img {
+        height: 48px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
