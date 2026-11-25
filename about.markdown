@@ -210,6 +210,25 @@ sitemap:
 
                 <div class="project-card">
                     <div class="project-header">
+                        <h4>Personalized Photo Products Platform</h4>
+                    </div>
+                    <p>Built and scaled a photo book and print-products platform with online design tools, high-volume image processing, checkout, and print fulfillment. Focused on performance, background jobs for rendering and orders, and reliable delivery across product lines like books, cards, and calendars.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Ruby</span>
+                        <span class="tech-tag">Rails</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Sidekiq</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                    <div class="project-role">Role: Senior Software Engineer</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
                         <h4>Amazon Marketplace Integration</h4>
                     </div>
                     <p>Marketplace platform for ads and campaigns at Amazon, working across different countries with comprehensive data analytics and campaign management.</p>
@@ -237,21 +256,6 @@ sitemap:
                         <span class="tech-tag">Kubernetes</span>
                     </div>
                     <div class="project-role">Role: Remote Team Lead | Software Architect</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h4>Amazon Marketplace Integration</h4>
-                    </div>
-                    <p>Marketplace platform for ads and campaigns at Amazon, working across different countries with comprehensive data analytics and campaign management.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Ruby 3.0</span>
-                        <span class="tech-tag">Rails 7.0</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Snowflake</span>
-                    </div>
-                    <div class="project-role">Role: Software Architect with Team Lead</div>
                 </div>
 
                 <div class="project-card">
