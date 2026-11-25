@@ -164,6 +164,9 @@ sitemap:
             <div class="skill-category">
                 <h3><i class="fas fa-robot"></i> AI Tools & Integration</h3>
                 <div class="skill-tags">
+                    <span class="skill-tag">Claude</span>
+                    <span class="skill-tag">Claude Code</span>
+                    <span class="skill-tag">Cursor</span>
                     <span class="skill-tag">GitHub Copilot</span>
                     <span class="skill-tag">ChatGPT</span>
                     <span class="skill-tag">PayPal API</span>
@@ -171,6 +174,17 @@ sitemap:
                     <span class="skill-tag">Twilio</span>
                     <span class="skill-tag">Mandrill</span>
                     <span class="skill-tag">OAuth</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Semgrep</span>
+                    <span class="skill-tag">Altcha</span>
+                    <span class="skill-tag">SAST</span>
+                    <span class="skill-tag">Bot Protection</span>
+                    <span class="skill-tag">OWASP</span>
                 </div>
             </div>
         </div>
